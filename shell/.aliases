@@ -1,0 +1,14 @@
+# git
+alias g="git"
+alias gs="git status"
+
+# kubectl
+alias k="kubectl"
+alias kgp="kubectl get pods"
+alias kdp="kubectl describe pod"
+
+# unity (Windows specific)
+alias cdunity="cd /Users/Shared/Unity"
+
+# projects path
+alias cdproj="cd /Users/$(whoami)/Projects"

@@ -1,4 +1,6 @@
-# tmux Configs
+# tmux
+
+Tmux configurations I like.
 
 
 ## Prerequisites
@@ -9,19 +11,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 
-## Usage
+## Install
 
-
-**Option 1**
-
-Copy the `.tmux.conf` file directly into `~/.tmux.conf`
-
-You'll need to redo this each time changes are pulled.
-
-
-**Option 2**
-
-Create link from this file in this folder to the expected location:
+From the current path:
 ```
 ln .tmux.conf ~/.tmux.conf
 ```
@@ -34,7 +26,7 @@ ln .tmux.conf ~/.tmux.conf
 :source-file ~/.tmux.conf
 ```
 
-**Reload rom shell**
+**Reload from shell**
 ```
 $ tmux source-file ~/.tmux.conf
 ```

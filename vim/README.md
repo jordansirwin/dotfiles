@@ -1,5 +1,11 @@
-vim config location:
-  ~/.vimrc
+# vim
 
-Create link (assuming currently in folder):
+Vim configurations I like.
+
+
+## Install
+
+From current path:
+```
 ln .vimrm ~/.vimrc
+```

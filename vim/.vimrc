@@ -1,12 +1,3 @@
-" remove bindings for cursor keys. hjkl OR fail
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-" map to Escape when in Insert Mode
-inoremap jk <ESC>
-
 syntax enable       " enable syntax processing
 
 set tabstop=4       " tab when loading
