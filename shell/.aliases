@@ -10,10 +10,10 @@ alias gl="g lg"
 # use Windows' git when working under mnt (WLS2 is super slow otherwise)
 function git() {
   if [[ $(pwd -P) = /mnt/* ]]; then
-    echo "Using Windows Git"
+    #echo "Using Windows Git"
     git.exe "$@"
   else
-    echo "Using Linux Git"
+    #echo "Using Linux Git"
     command git "$@"
   fi
 }
