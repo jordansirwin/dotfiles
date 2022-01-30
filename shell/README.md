@@ -13,7 +13,7 @@ Common aliases I like.
 
 From this path:
 ```
-ln .aliases ~/.aliases
+ln -s .aliases ~/.aliases
 ```
 
 Edit `~/.bashrc` (or `~/.zshrc`) with the following:

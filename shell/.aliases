@@ -1,14 +1,34 @@
+#-------
 # git
+#-------
 alias g="git"
-alias gs="git status"
+alias gs="g status"
+alias gd="g diff"
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gl="g lg"
 
+# use Windows' git when working under mnt (WLS2 is super slow otherwise)
+function git() {
+  if [[ $(pwd -P) = /mnt/* ]]; then
+    echo "Using Windows Git"
+    git.exe "$@"
+  else
+    echo "Using Linux Git"
+    command git "$@"
+  fi
+}
+
+
+#-------
 # kubectl
+#-------
 alias k="kubectl"
 alias kgp="kubectl get pods"
 alias kdp="kubectl describe pod"
 
-# unity (Windows specific)
-alias cdunity="cd /Users/Shared/Unity"
 
-# projects path
-alias cdproj="cd /Users/$(whoami)/Projects"
+#-------
+# Personal computer specific
+#-------
+alias cdunity="cd /mnt/p/Unity"
+alias cdproj="cd /mnt/p/"
